@@ -7,14 +7,14 @@ import { Greet } from "./greet";
  */
 
 describe("Greet", () => {
-  test("renders correctly", () => {
+  it("renders correctly", () => {
     render(<Greet />);
     const textElement = screen.getByText("Hello");
     expect(textElement).toBeInTheDocument();
   });
 });
 describe("Nested", () => {
-    test("render with a name", () => {
+    it("render with a name", () => {
       render(<Greet name="shabaaz" />);
       const textElement = screen.getByText("Hello shabaaz");
       expect(textElement).toBeInTheDocument();
