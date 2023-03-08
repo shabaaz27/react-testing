@@ -12,7 +12,7 @@ test('Greet Renders correctly',()=>{
     expect(textElement).toBeInTheDocument()
 })
 
-test('Greet render with a name',()=>{
+test.only('Greet render with a name',()=>{
     render(<Greet name="shabaaz"/>)
     const textElement =screen.getByText('Hello shabaaz')
     expect(textElement).toBeInTheDocument()
